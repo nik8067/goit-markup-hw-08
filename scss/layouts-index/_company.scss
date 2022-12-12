@@ -1,0 +1,51 @@
+/***Постійні клієнти-------------**/
+.company {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-company {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+
+    &__uptitle:hover,
+    &__uptitle:focus .client-company__icon {
+        border-color: var(--title-text-color);
+        color: var(--title-text-color);
+    } 
+}
+.client-company__title {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.client-company__uptitle {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-line);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--white-fons-color);
+    color: var(--border-line);
+}
+.client-company__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+/*.company-soc-icon:hover,
+.company-soc-icon:focus {
+    fill: var(--title-text-color);
+}*/

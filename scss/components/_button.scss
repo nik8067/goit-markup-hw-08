@@ -1,0 +1,28 @@
+/**------------------------Кнопка heder*/
+button {
+    font-family: inherit;
+    border: none;
+}
+.button {
+    height: 50px;
+    border-radius: 4px;
+    min-width: 216px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--white-fons-color);
+    background-color: var(--primary-bck-color);
+    cursor: pointer;
+}
+.button.primary {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--white-fons-color);
+    background-color: var(--title-text-color);
+
+    &:hover,
+    &:active {
+    background-color: var(--button-fons-color);
+}
+}

@@ -1,0 +1,116 @@
+/*--------------------------HEDER-------------*/
+.page-header {
+    background-color: var(--white-fons-color);
+    }
+.page .page-header {
+        border-bottom: 1px solid var(--border-fon-heder);
+    }
+.main-logo {
+    display: flex;
+    align-items: center;
+    }
+/**-------------------FLEX меню шапки**/
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .site-nav__item + .site-nav__item {
+     margin-left: 50px;
+}
+.site-nav .site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+/*.site-nav .item-nav + .item-nav {
+    margin-left: 40px;
+}*/
+/**---------------Site nav color*/
+.current::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--title-text-color);
+    border-radius: 2px;
+}
+.site-nav__link {
+    position: relative;
+}
+.site-nav .site-nav__link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--primary-text-color);
+}
+.site-nav .site-nav__link:hover,
+.site-nav .site-nav__link:focus {
+    color: var(--title-text-color);
+}
+.site-nav  .site-nav__link.current {
+    color: var(--title-text-color);
+}
+
+/**-------------------FLEX + icon phone**/
+.info-nav {
+   display: flex;
+   margin-left: auto;
+}
+.info-nav__link {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.info-nav__icon {
+    fill: var(--accent-text-color);
+    fill: currentColor;
+}
+/*.link-info::before {
+    display: block;
+    content: "";
+    height: 16px;
+    width: 12px;
+    background-image: url("../images/envelope.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
+.info-nav .info-nav__item + .info-nav__item {
+    margin-left: 50px;
+}
+.info-nav .link-info {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.info-nav .info-nav__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: var(--accent-text-color);
+}
+.info-nav .info-nav__link:hover,
+.info-nav .info-nav__link:focus .info-nav__icon {
+    color: var(--title-text-color);
+}
+.info-nav .info-nav__link:hover,
+.info-nav .info-nav__link:focus {
+    color: var(--title-text-color);
+}

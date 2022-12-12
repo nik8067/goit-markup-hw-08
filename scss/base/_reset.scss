@@ -1,0 +1,24 @@
+/**-------*Прибрати всі списки*/
+/** Сброс марджинов для загаловков и тектовых блоков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+    padding-top: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/**-------------Прибираємо курсив Подвал*/
+a {
+    font-style: normal;
+}

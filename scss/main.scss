@@ -1,0 +1,32 @@
+@import './base/reset';
+@import './base/common';
+
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+
+@import './components/container';
+@import './components/button';
+@import './components/modal';
+
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/logo';
+
+
+@import './layouts-index/position-title';
+@import './layouts-index/content-title';
+@import './layouts-index/feature-title';
+@import './layouts-index/contact-soc-list';
+@import './layouts-index/company';
+
+
+@import './layouts-portfolio/menu-btg';
+@import './layouts-portfolio/benefits-title';
+
+
+@import './layouts/footer-soc-container';
+@import './layouts/footer-form';
+@import './layouts/footer';

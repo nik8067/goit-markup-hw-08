@@ -1,0 +1,57 @@
+/**Список соцмереж в секції Наша команда**/
+.contact-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--title-text-color);
+        }
+    &__link:hover .contact-soc__icon {
+        fill: var(--white-fons-color);
+    }
+    &__link:focus .contact-soc__icon {
+        fill: var(--white-fons-color);
+    }
+    }
+    .contact-soc__link {
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        background-color: var(--white-fons-color);
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+.contact-soc__icon {
+    fill: var(--border-line);
+    }
+    /*.link {
+        display: inline-block;
+        margin-top: 16px;
+        width: 44px;
+        height: 44px;
+        background-color: var(--white-fons-color)
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    }
+    .instagram {
+        background-image: url("../images/instagram.svg");
+    }
+    .twitter {
+        background-image: url("../images/twitter.svg");
+    }
+    .facebook {
+        background-image: url("../images/facebook.svg");
+    }
+    .linkidin {
+        background-image: url("../images/linkedin.svg");
+    }*/

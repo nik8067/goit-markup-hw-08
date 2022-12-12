@@ -1,0 +1,209 @@
+/***-----------------Модалка----------*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--backdrop-color-fon);
+
+    &.is-hidden .modal {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+
+    width: 528px;
+    height: 581px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--white-fons-color);
+}
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.input-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    letter-spacing: 0.01em;
+    color: var(--accent-text-color);
+}
+.text-area {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding-top: 16px;
+    padding-left: 12px;
+    border: 1px solid var(--input-area-color);
+    border-radius: 4px;
+    resize: none;
+
+    &::placeholder, & {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    
+    }
+}
+
+/***--------CheckBOX-------------------*/
+.line {
+    position: relative;
+}
+.policy-uptitle {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-left: 8px;
+    color: var(--title-text-color);
+}
+.policy-uptitle::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--title-text-color);
+}
+.policy-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-text-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: 8px;
+}
+.policy-title span {
+    width: 16px;
+    height: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+
+    fill: transparent;
+}
+.modal-check:checked + .policy-title span {
+    background-color: var(--title-text-color);
+    border: none;
+    fill: var(--white-fons-color);
+}
+.modal-check:focus + .policy-title span {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.button.push {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 200px;
+    border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--button-fons-color);
+    box-shadow: 0px 4px 4px var(--modal-btg-color);
+}
+}
+.modal-form .button {
+    margin: 0 auto;
+}
+/**-----------------------------------*/
+.input-wrapper {
+    position: relative;
+}
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 35px;
+    cursor: pointer;
+    border: 1px solid var(--input-area-color);
+
+    &:focus {
+        border-color: var(--title-text-color);
+    }
+    &:focus + .input-icon {
+        fill: var(--title-text-color);
+    }
+    &:not(:focus):not(:placeholder-shown):valid {
+        background-color: rgba(0, 128, 0, 0.276);
+    }
+    &:not(:focus):not(:placeholder-shown):invalid {
+        background-color: rgba(128, 36, 0, 0.276);
+    }
+}
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.button-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid var(--button-modal-color);
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: var(--white-fons-color);
+
+    &:hover,
+    &:focus {
+    color: var(--title-text-color);
+    border: 1px solid var(--title-text-color);
+}
+}
+.modal-icon {
+    fill: currentColor;
+}

@@ -1,0 +1,17 @@
+/**-------------Logo link color*/
+.main-logo__link {
+    padding-top :24px;
+    padding-bottom: 25px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+}
+.main-logo__text {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14; 
+    color: var(--logo-text-color);
+}

@@ -1,0 +1,57 @@
+/**-------------Features-title Наша команда*/
+.features {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--white-second-color);
+}
+.features__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+.features__subtitle {
+    flex-basis: calc((100% - 90px) / 4);
+}
+/*.features__subtitle .benefits-uptitle {
+    flex-basis: calc((100% - 90px) / 4);
+}*/
+.features__list {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.features__items {
+    margin-bottom: 10px;
+}
+.features__text {
+    margin-bottom: 16px;
+}
+.features__subtitle {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.features__uptitle {
+    background-color: var(--white-fons-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.features__subtitle .features__items {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.features__subtitle .features__text {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--accent-text-color);
+}
