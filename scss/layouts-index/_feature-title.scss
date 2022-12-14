@@ -1,20 +1,44 @@
 /**-------------Features-title Наша команда*/
 .features {
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--white-second-color);
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+	}
 }
 .features__title {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 36px;
     line-height: 1.67;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--primary-text-color);
+
+    @include desktop {
+        margin-bottom: 50px;
+	}
 }
-.features__subtitle {
-    flex-basis: calc((100% - 90px) / 4);
+// .features__subtitle {
+//     width: 100%;
+//     @include tablet {
+//         width: calc((100% - 30px) / 2);
+// 	}
+// }
+.features__uptitle {
+    width: 100%;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+	} 
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+	}
 }
 /*.features__subtitle .benefits-uptitle {
     flex-basis: calc((100% - 90px) / 4);
@@ -32,6 +56,7 @@
 }
 .features__subtitle {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }

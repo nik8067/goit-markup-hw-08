@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
-  <body class="page">
+  <!-- <body class="page">
     <header class="page-header">
       <div class="container main-logo">
         <nav class="main-logo">
@@ -39,7 +39,7 @@
             </li>
         </ul>
       </div>
-    </header> 
+    </header> -->
     <main>
         <section class="hero">
           <div class="hero__container container">
@@ -87,7 +87,12 @@
           <ul class="position__uptitle">
             <li class="position__image">
               <div class="position__photo">
-              <img class="position__photo__title" src="./images/img.png" alt="Написання программи" width="370">
+                <picture>
+                  <source srcset="./images/img.png 1x, ">
+                  <source>
+                  <source>
+                  <img class="position__photo__title" src="./images/img.png" alt="Написання программи" width="370">
+                </picture>
               <div class="position__text">
                 <h3 class="position__content">Десктопні додатки</h3>
               </div>

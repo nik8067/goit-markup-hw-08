@@ -2,5 +2,17 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    width: 1200px;
-    }
+    width: 100%;
+
+    @include mobile {
+		width: 480px;
+	}
+
+	@include tablet {
+		width: 768px;
+	}
+
+	@include desktop {
+		width: 1200px;
+	}
+}

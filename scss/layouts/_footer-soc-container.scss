@@ -1,18 +1,21 @@
 /**-------------ПРИЄДНУЙТЕСЬ-------------**/
-.footer-container {
-    align-items: baseline;
-    display: flex;
-}
+// .footer-container {
+//     align-items: baseline;
+//     display: flex;
+// }
 .footer-title {
-  display: flex;
-  gap: 10px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
-.footer-soc {
-  margin-left: 70px;
-}
+// .footer-soc {
+//   margin-left: 70px;
+// }
 .footer-soc__title {
     margin-bottom: 20px;
     display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     font-style: normal;

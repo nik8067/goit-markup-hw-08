@@ -1,11 +1,19 @@
 /***Постійні клієнти-------------**/
 .company {
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+	}
 }
 .client-company {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -18,14 +26,20 @@
         border-color: var(--title-text-color);
         color: var(--title-text-color);
     } 
+    @include desktop {
+        margin-bottom: 50px;
+	}
 }
 .client-company__title {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .client-company__uptitle {
-    width: 170px;
+    // width: 170px;
+    // height: 92px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--border-line);
     border-radius: 4px;
@@ -39,6 +53,15 @@
 
     background-color: var(--white-fons-color);
     color: var(--border-line);
+
+    @include tablet {
+        width: 226px;
+        height: 92px;
+	}
+    @include desktop {
+        width: 170px;
+        height: 92px;
+	}
 }
 .client-company__icon {
     width: 106px;

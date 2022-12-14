@@ -1,29 +1,74 @@
 /**---------------------Hero---------------*/
 .hero {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 200px 0;
+    // max-width: 1600px;
+    // height: 600px;
+    margin: 0 auto;
+    padding: 118px 0;
     text-align: center;
     outline: 1px solid black;
-    background-image: linear-gradient(
-        to right, 
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)), 
-        url("../images/header.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-color: var(--black-fons-color);
+    background-image: var(--gra), url("../images/header-mob.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--black-fons-color);
+        @include retina {
+            background-image: var(--gra), url("../images/header-mob-2x.jpg");
+        }
+
+        @include mobile {
+            background-image: var(--gra), url("../images/header-tablet.jpg");
+        }
+
+        @include retina {
+            background-image: var(--gra), url("../images/header-tablet-2x.jpg");
+        } 
+
+        @include tablet {
+            background-image: var(--gra), url("../images/header.jpg");
+        }
+
+        @include retina {
+            background-image: var(--gra), url("../images/header-2x.jpg");
+        } 
+        
+        @include desktop {
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
+        } 
 }
 .hero__title {
-    width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
-    font-size: 44px;
-    line-height: 1.36;
+    padding-left: 60px;
+	padding-right: 60px;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-fons-color);
+
+    // @include tablet {
+    //     padding-left: 180px;
+	// 	padding-right: 180px;
+	// }
+    // @include desktop {
+    //     width: 696px;
+    //     font-size: 44px;
+    //     line-height: 1.36;
+    //     padding-left: 40px;
+	// 	padding-right: 40px;
+	// }
+    @include tablet {
+		padding-left: 176px;
+		padding-right: 176px;
+	}
+
+	@include desktop {
+		padding-left: 264px;
+		padding-right: 264px;
+
+		font-size: 44px;
+		line-height: 1.36;
+	}
 }
