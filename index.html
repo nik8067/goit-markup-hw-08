@@ -88,10 +88,8 @@
             <li class="position__image">
               <div class="position__photo">
                 <picture>
-                  <source srcset="./images/img.png 1x, ">
-                  <source>
-                  <source>
-                  <img class="position__photo__title" src="./images/img.png" alt="Написання программи" width="370">
+                  <source srcset="./images/img.jpg 1x, ./images/img1-tab-2x.jpg 2x" media="(min-width: 1200px)">
+                  <img class="position__photo__title" src="./images/img.jpg" alt="Написання программи" width="370">
                 </picture>
               <div class="position__text">
                 <h3 class="position__content">Десктопні додатки</h3>
@@ -100,7 +98,10 @@
             </li>
             <li class="position__image">
               <div class="position__photo">
-              <img class="position__photo__title" src="./images/img2.png" alt="Тестування программи" width="370">
+                <picture>
+                  <source srcset="./images/img2.jpg 1x, ./images/img2-tab-2x.jpg 2x" media="(min-width: 1200px)">
+                  <img class="position__photo__title" src="./images/img2.jpg" alt="Тестування программи" width="370">
+                </picture>
               <div class="position__text">
                 <h3 class="position__content">Мобільні додатки</h3>
               </div>
@@ -108,8 +109,11 @@
             </li>
             <li class="position__image">
               <div class="position__photo">
-              <img class="position__photo__title" src="./images/img3.png" alt="Стилізація проекту" width="370">
-              <div class="position__text">
+                <picture>
+                  <source srcset="./images/img3.jpg 1x, ./images/img3-tab-2x.jpg 2x" media="(min-width: 1200px)">
+                  <img class="position__photo__title" src="./images/img3.jpg" alt="Стилізація проекту" width="370">
+                </picture>
+                 <div class="position__text">
                 <h3 class="position__content">Дизайнерські рішення</h3>
               </div>
               </div>
@@ -122,7 +126,21 @@
           <h2 class="features__title">Наша команда</h2>
           <ul class="features__subtitle">
           <li class="features__uptitle">
-            <img class="features__image" src="./images/Worker1.jpg" alt="Дизайнер" width="270">
+            <picture>
+              <source
+                srcset="./images/Worker1-1200.jpg 1x, ./images/Worker2-1200.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/Worker1-768.jpg 1x, ./images/Worker2-768.jpg 2x"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="./images/Worker1-480.jpg 1x, ./images/Worker2-768.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img class="features__image" src="./images/Worker1.jpg" alt="Дизайнер" width="450">
+            </picture>
             <div class="features__list">
             <h3 class="features__items">Ігор Дем'яненко</h3>
             <p class="features__text">Product Designer</p>
