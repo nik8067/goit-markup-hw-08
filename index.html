@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
-  <!-- <body class="page">
+  <body class="page">
     <header class="page-header">
       <div class="container main-logo">
         <nav class="main-logo">
@@ -39,7 +39,10 @@
             </li>
         </ul>
       </div>
-    </header> -->
+      <!--Мобiльне--меню---------------------------->
+      <button type="button" class="menu-open">
+      </button>
+    </header>
     <main>
         <section class="hero">
           <div class="hero__container container">
@@ -128,15 +131,15 @@
           <li class="features__uptitle">
             <picture>
               <source
-                srcset="./images/Worker1-1200.jpg 1x, ./images/Worker2-1200.jpg 2x"
+                srcset="./images/Worker1-1200-1x.jpg 1x, ./images/Worker1-1200-2x.jpg 2x"
                 media="(min-width: 1200px)"
               />
               <source
-                srcset="./images/Worker1-768.jpg 1x, ./images/Worker2-768.jpg 2x"
+                srcset="./images/Worker1-768-1x.jpg 1x, ./images/Worker1-768-2x.jpg 2x"
                 media="(min-width:768px)"
               />
               <source
-                srcset="./images/Worker1-480.jpg 1x, ./images/Worker2-768.jpg 2x"
+                srcset="./images/Worker1-480-1x.jpg 1x, ./images/Worker1-480-2x.jpg 2x"
                 media="(max-width: 767px)"
               />
               <img class="features__image" src="./images/Worker1.jpg" alt="Дизайнер" width="450">
@@ -177,7 +180,21 @@
              </div>
            </li>
           <li class="features__uptitle">
-            <img class="features__image" src="./images/Worker2.jpg" alt="Фронтенд Девелопер" width="270">
+            <picture>
+              <source
+                srcset="./images/Worker2-1200-1x.jpg 1x, ./images/Worker2-1200-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/Worker2-768-1x.jpg 1x, ./images/Worker2-768-2x.jpg 2x"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="./images/Worker2-480-1x.jpg 1x, ./images/Worker2-480-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+            <img class="features__image" src="./images/Worker2.jpg" alt="Фронтенд Девелопер" width="450">
+            </picture>
             <div class="features__list">
             <h3 class="features__items">Ольга Рєпіна</h3>
             <p class="features__text">Frontend Developer</p>
@@ -214,7 +231,21 @@
             </div>
           </li>
           <li class="features__uptitle">
-            <img class="features__image" src="./images/Worker3.jpg" alt="Маркетолог" width="270">
+            <picture>
+              <source
+                srcset="./images/Worker3-1200-1x.jpg 1x, ./images/Worker3-1200-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/Worker3-768-1x.jpg 1x, ./images/Worker3-768-2x.jpg 2x"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="./images/Worker3-480-1x.jpg 1x, ./images/Worker3-480-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+            <img class="features__image" src="./images/Worker3.jpg" alt="Маркетолог" width="450">
+            </picture>
              <div class="features__list">
             <h3 class="features__items">Микола Тарасов</h3>
             <p class="features__text">Marketing</p>
@@ -251,7 +282,21 @@
              </div>
           </li>
           <li class="features__uptitle">
-            <img class="features__image" src="./images/Worker4.jpg" alt="Дизайнер" width="270">
+            <picture>
+              <source
+                srcset="./images/Worker4-1200-1x.jpg 1x, ./images/Worker4-1200-2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./images/Worker4-768-1x.jpg 1x, ./images/Worker4-768-2x.jpg 2x"
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="./images/Worker4-480-1x.jpg 1x, ./images/Worker4-480-2x.jpg 2x"
+                media="(max-width: 767px)"
+              />
+            <img class="features__image" src="./images/Worker4.jpg" alt="Дизайнер" width="450">
+            </picture>
             <div class="features__list">
             <h3 class="features__items">Михайло Єрмаков</h3>
             <p class="features__text">UI Designer</p>

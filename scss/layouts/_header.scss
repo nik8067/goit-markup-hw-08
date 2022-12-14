@@ -11,7 +11,8 @@
     }
 /**-------------------FLEX меню шапки**/
 .site-nav {
-    display: flex;
+    // display: flex;
+    display: none;
     margin-left: 93px;
 }
 .site-nav .site-nav__item + .site-nav__item {
@@ -61,11 +62,13 @@
 
 /**-------------------FLEX + icon phone**/
 .info-nav {
-   display: flex;
+//    display: flex;
+   display: none;
    margin-left: auto;
 }
 .info-nav__link {
-    display: flex;
+    // display: flex;
+    display: none;
     text-decoration: none;
     align-items: center;
     justify-content: center;
