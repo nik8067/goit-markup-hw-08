@@ -29,6 +29,11 @@
 		flex-basis: calc((100% - 60px) / 3);
 	}
 }
+.benefits-list__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 /*.benefits-title .benefits-subtitle:nth-child(3n) {
     margin-right: 30px;
 }*/
@@ -42,6 +47,7 @@
 .portfolio-thumb {
     position: relative;
     overflow: hidden;
+    flex-grow: 1;
 
     &__image {
         display: block;
@@ -71,6 +77,7 @@
     padding: 20px 24px;
     border: 1px solid var(--card-content);
     border-top: 0;
+    flex-grow: 1;
 
     &__items {
         margin-bottom: 4px;

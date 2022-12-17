@@ -10,6 +10,10 @@
 	justify-content: space-around;
     text-align: center;
     gap: 60px;
+
+    @include desktop {
+        text-align: left;
+	}
 }
 .main-logo__list {
     font-family: 'Raleway';
