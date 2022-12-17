@@ -42,6 +42,10 @@
 	justify-content: center;
 
 	background-color: transparent;
+
+	@include tablet {
+		display: none;
+	}
 }
 .button-open-icon {
     fill: currentColor;
@@ -64,9 +68,9 @@
         outline: transparent;
 }
 }
-// .link_current {
-//     color: var(--title-text-color);
-// }
+.link_current {
+    color: var(--title-text-color);
+}
 .mobile-menu {
     margin-bottom: 64px;;
 }
@@ -80,6 +84,9 @@
 
     &:hover,
 	&:focus {
+		font-size: 34px;
+		line-height: 1.18;
+	
 		color: var(--title-text-color);
 		outline: transparent;
 	}
@@ -110,3 +117,15 @@
 		flex-basis: calc((100% - 10px) / 2);
 	}
 }
+// .mobile-social {
+// 	position: relative;
+// 	padding-top: 100%;
+// }
+// .mobile-social::before {
+// 	content: "";
+// 	top: 0;
+// 	width: 60px;
+// 	height: 1px;
+// 	background-color: black;
+
+// }

@@ -16,9 +16,18 @@
 }
 }
 .benefits-list .benefits-list__title {
-    display: flex;
-    width: calc((100% - 60px) / 3);
+    // display: flex;
+    // width: calc((100% - 60px) / 3);
+    flex-basis: 100%;
     background-color: var(--white-fons-color);
+
+	@include tablet {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+
+	@include desktop {
+		flex-basis: calc((100% - 60px) / 3);
+	}
 }
 /*.benefits-title .benefits-subtitle:nth-child(3n) {
     margin-right: 30px;

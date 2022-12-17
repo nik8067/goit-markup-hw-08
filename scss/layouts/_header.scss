@@ -11,9 +11,12 @@
     }
 /**-------------------FLEX меню шапки**/
 .site-nav {
-    // display: flex;
     display: none;
     margin-left: 93px;
+
+    @include tablet {
+		display: flex;
+	}
 }
 .site-nav .site-nav__item + .site-nav__item {
      margin-left: 50px;
