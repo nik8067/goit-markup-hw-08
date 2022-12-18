@@ -104,8 +104,14 @@
 	font-size: 18px;
 	line-height: 1.22;
 	letter-spacing: 0.02em;
+	position: relative;
 
 	color: var(--title-text-color);
+}
+.mobile-social__item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid var(--input-area-color);
 }
 .mobile-social {
 	display: flex;

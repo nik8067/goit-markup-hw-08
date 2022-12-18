@@ -726,7 +726,14 @@ button {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  position: relative;
   color: var(--title-text-color);
+}
+
+.mobile-social__item:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid var(--input-area-color);
 }
 
 .mobile-social {
@@ -1543,8 +1550,8 @@ button {
 }
 
 .footer-form__input {
-  width: 450px;
-  height: 50px;
+  width: 100%;
+  min-height: 50px;
   font-size: 16px;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -1556,10 +1563,14 @@ button {
   border-radius: 4px;
   background-color: #2F303A;
 }
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    min-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-form__input {
-    width: 358px;
-    margin-bottom: 0;
+    min-width: 358px;
   }
 }
 
